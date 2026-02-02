@@ -65,7 +65,7 @@ loop:
     STR R1, [R0]          @ Write to GPIO1_DR
 
     /* 延时 */
-    LDR R2, =0xFFFFF     @ 使用LDR指令加载延时计数器值
+    LDR R2, =0x1FFFF     @ 使用LDR指令加载延时计数器值
 1:  SUBS R2, R2, #1       @ 递减计数器
     BNE 1b                @ 如果计数器未到0，继续循环
 
@@ -74,7 +74,7 @@ loop:
     STR R1, [R0]          @ Write to GPIO1_DR
 
     /* 延时 */
-    LDR R2, =0xFFFFF     @ 使用LDR指令加载延时计数器值
+    LDR R2, =0x1FFFF     @ 使用LDR指令加载延时计数器值
 2:  SUBS R2, R2, #1       @ 递减计数器
     BNE 2b                @ 如果计数器未到0，继续循环
 

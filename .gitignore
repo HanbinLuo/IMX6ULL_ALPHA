@@ -1,0 +1,25 @@
+# Ignore binary files
+*.bin
+
+# Ignore disassembly files
+*.dis
+
+# Ignore ELF files
+*.elf
+
+# Ignore IMX files
+*.imx
+
+# Ignore object files
+*.o
+
+# Ignore build artifacts
+*.out
+*.map
+
+# Ignore temporary files
+*~
+*.tmp
+
+# Ignore Makefile backups
+Makefile.bak
