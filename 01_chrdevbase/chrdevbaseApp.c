@@ -35,12 +35,19 @@ int main(int argc, char *argv[])
 	if(argc != 3){
 		printf("Error Usage!\r\n");
 		return -1;
+	}else{
+		printf("argc = %d\r\n", argc);
+		printf("argv[0] = %s\r\n", argv[0]);
+		printf("argv[1] = %s\r\n", argv[1]);
+		printf("argv[2] = %s\r\n", argv[2]);
 	}
 
 	filename = argv[1];
+	printf("filename = %s\r\n", filename);
 
 	/* 打开驱动文件 */
 	fd  = open(filename, O_RDWR);
+	printf("fd = %d\r\n", fd);
 	if(fd < 0){
 		printf("Can't open file %s\r\n", filename);
 		return -1;
@@ -52,7 +59,7 @@ int main(int argc, char *argv[])
 			printf("read file %s failed!\r\n", filename);
 		}else{
 			/*  读取成功，打印出读取成功的数据 */
-			printf("read data:%s\r\n",readbuf);
+			printf("读取数据长度:%d, read data:%s\r\n", retvalue, readbuf);
 		}
 	}
 
@@ -62,6 +69,8 @@ int main(int argc, char *argv[])
 		retvalue = write(fd, writebuf, 50);
 		if(retvalue < 0){
 			printf("write file %s failed!\r\n", filename);
+		}else{
+			printf("写入数据长度:%d, write data:%s\r\n", retvalue, writebuf);
 		}
 	}
 
