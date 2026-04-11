@@ -1,0 +1,47 @@
+# 忽略常见的 Linux 驱动编译中间文件
+*.o
+*.ko
+*.mod.c
+*.order
+*.symvers
+*.cmd
+*.tmp
+*.mod
+*.markers
+*.d
+*.gcno
+*.gcda
+*.gcov
+modules.order
+Module.symvers
+
+# 忽略自动生成的依赖和输出目录
+*.a
+*.so
+*.bin
+*.dtb
+*.dtbo
+*.img
+*.elf
+*.map
+*.lst
+*.su
+*.lzo
+*.xz
+*.gz
+*.bz2
+*.lz4
+*.zst
+*.lzma
+*.c~
+*.swp
+*.swo
+*.bak
+*.orig
+*.rej
+
+# 忽略 Makefile 生成的 build 目录
+build/
+
+# 忽略 VSCode 配置
+# .vscode/

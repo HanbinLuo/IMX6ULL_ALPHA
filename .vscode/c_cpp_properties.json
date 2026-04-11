@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                 "/home/lhb/linux_learning/02_system_migration/nxp_linux/linux-imx-rel_imx_4.1.15_2.1.0_ga/include",
+                 "/home/lhb/linux_learning/02_system_migration/nxp_linux/linux-imx-rel_imx_4.1.15_2.1.0_ga/arch/arm/include",
+                 "/home/lhb/linux_learning/02_system_migration/nxp_linux/linux-imx-rel_imx_4.1.15_2.1.0_ga/arch/arm/include/generated"
+            ],
+            "defines": []
+        }
+    ],
+    "version": 4
+}
